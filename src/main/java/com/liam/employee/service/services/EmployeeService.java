@@ -42,7 +42,7 @@ public class EmployeeService {
 		
 		Department department = restTemplate.getForObject("http://DEPARTMENT-SERVICE/departments/" + employee.getDepartmentId(), Department.class);
 		
-		log.info("Eureka Up & Running correctly");
+		log.info("API-Gateway & Eureka Up and Running correctly");
 		
 		vo.setEmployee(employee);
 		
